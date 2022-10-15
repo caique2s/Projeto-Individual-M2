@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Individual-M2</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/script.js"></script>
+</head>
+
+<body>
+    <div id="principal">
+        <div class="container">
+            <h1>CRIPTOGRAFIA</h1>
+            <br>
+            <input class="inputs" type="radio" id="cifra" name="escolha" class="criptografias" onclick="aparecer()">
+            <label for="cifra" class="criptografias">Cifra de César</label>
+
+            <input class="inputs" type="radio" id="b64" name="escolha" class="criptografias" onclick="sumir()">
+            <label for="b64" class="criptografias">Base64</label>
+
+            <br>
+            <br>
+            <input class="inputs" type="number" id="num" placeholder="Insira um número">
+            <br>
+
+            <br>
+            <textarea class="inputs" type="text" id="texto" placeholder="Mensagem:" rows="5"></textarea>
+            <br>
+            <br>
+
+            <button class="btn" id="crip" type="submit" onclick="cript()" value="enviar"> Codificar </button>
+            <button class="btn" id="des" type="submit" onclick="descript()" value="enviar"> Decodificar </button>
+            <br>
+            <br>
+            <textarea class="inputs" type="text" id="resposta" rows="5"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
